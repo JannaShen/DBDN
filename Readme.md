@@ -1,9 +1,11 @@
+# Torch
+
 This repository for DBDN in the following paper https://arxiv.org/abs/1810.04873
 
 The code is built on EDSR Torch7, under Ubuntu16.04 cuDNN environment with Titan X GPUs
 
-#Train
- Prepare training data 
+# Train
+  Prepare training data 
   1. Download DIV2K training data (800 training +100 validation) from https://data.vision.ee.ethz.ch/cvl/DIV2K/
      Download Flickr2K training data from https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar
   2. Place HR images in 'code/Prepare_TrainData/DIV2K/DIV2K_HR' and 'code/Prepare_TrainData/Flickr2K/Flickr2K_HR'
@@ -15,13 +17,13 @@ The code is built on EDSR Torch7, under Ubuntu16.04 cuDNN environment with Titan
   2. cd 'code', use the scripts in file 'Train_scripts.sh' to train the models 
 
 
-#Test
+# Test
 1.  Download models for the paper from "https://www.dropbox.com/home/DBDN" and shore them into 'test/model'
 2.  Prepare test data, Run 'Prepare_TestData_HR_LR' in Matlab to generate HR/LR images with different degradation models.
 3.  Run'Test.lua' based on the code in the 'Test_scripts'.
 4.  Run' Evaluation_PSNR_SSIM.m' to obtain PSNR/SSIM results.
 
-#Citation
+# Citation
 if you find the code helpful in your research or work, please cite the following papers.
 ```
 @article{wang2018deep,
